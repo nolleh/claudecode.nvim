@@ -32,6 +32,10 @@ require("lazy").setup({
   install = { colorscheme = { "habamax" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
+  -- Use current working directory for dev plugins
+  dev = {
+    path = vim.fn.getcwd(),
+  },
 })
 
 -- Add keybind for Lazy plugin manager

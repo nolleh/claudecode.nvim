@@ -5,7 +5,7 @@
 
 return {
   "coder/claudecode.nvim",
-  dev = true, -- Use local development version
+  dir = vim.g.claudecode_dev_repo_root or vim.fn.getcwd(), -- fixture sets repo root; else cwd
   keys = {
     -- AI/Claude Code prefix
     { "<leader>a", nil, desc = "AI/Claude Code" },
